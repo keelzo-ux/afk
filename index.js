@@ -7,9 +7,9 @@ const {
     joinVoiceChannel
 } = require('@discordjs/voice');
 
-const TOKEN = 'MTUwOTA5MzI4ODk5NTU5MDIyNQ.GfEUjm.1AbDjGUgUJ3ik_l2Pv9kqbG6-UC02Fu8mnvBvE';
-const GUILD_ID = '1390940449929302046';
-const CHANNEL_ID = '1390940734923997215';
+const TOKEN = process.env.TOKEN;
+const GUILD_ID = process.env.GUILD_ID;
+const CHANNEL_ID = process.env.CHANNEL_ID;
 
 const client = new Client({
     intents: [
@@ -39,7 +39,7 @@ client.once('clientReady', async () => {
         channelId: CHANNEL_ID,
         guildId: GUILD_ID,
         adapterCreator: guild.voiceAdapterCreator,
-        selfDeaf: false,
+        selfDeaf: true,
         selfMute: true
     });
 
