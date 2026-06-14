@@ -1,5 +1,17 @@
 require("dotenv").config();
 
+require("dotenv").config();
+
+const TOKEN = process.env.TOKEN;
+const IS_MUTED = process.env.IS_MUTED === "true";
+const IS_DEAFENED = process.env.IS_DEAFENED === "true";
+const AUTO_RECONNECT = process.env.AUTO_RECONNECT === "true";
+
+console.log(TOKEN);
+console.log(IS_MUTED);
+console.log(IS_DEAFENED);
+console.log(AUTO_RECONNECT);
+
 const {
   Client,
   GatewayIntentBits,
