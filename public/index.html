@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koala AFK Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="topbar">
+        <div class="title">
+            🐨 Koala AFK Dashboard
+        </div>
+
+        <div class="menu-btn">
+            ⋮
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="card-title">Status</div>
+                <div class="card-value online">🟢 Online</div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Ping</div>
+                <div class="card-value" id="ping">0ms</div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">RAM</div>
+                <div class="card-value" id="ram">0 MB</div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Uptime</div>
+                <div class="card-value" id="uptime">0s</div>
+            </div>
+
+        </div>
+
+        <div class="actions">
+            <button class="btn connect">Connect</button>
+            <button class="btn reconnect">Reconnect</button>
+            <button class="btn disconnect">Disconnect</button>
+        </div>
+
+        <div class="server-box">
+            <h2>🌐 Server Bot</h2>
+            <div id="servers">
+                <div class="server">
+                    Loading server...
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
